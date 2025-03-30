@@ -1,7 +1,8 @@
-export default function Posts(){
+export default function Post({post}){
     return(
-        <div>
-            <h2>All posts are here </h2>
+        <div className="card">
+            <h5>{post.title}</h5>
+            <p>{post.body}</p>
         </div>
     )
 }
